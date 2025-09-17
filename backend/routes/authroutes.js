@@ -117,7 +117,7 @@ router.post("/login", async (req, res) => {
 router.post("/send-otp", async (req, res) => {
   try {
     // For testing, use a fixed number
-    const mobile = "+917981845578"; // Replace with the number you want to test
+    const mobile = "+91954156208"; // Replace with the number you want to test
 
     // Generate 6-digit OTP
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
@@ -160,7 +160,7 @@ router.post("/send-otp", async (req, res) => {
 router.post("/verify-otp", async (req, res) => {
   try {
     const { otp } = req.body;
-    const mobile = "+917981845578"; // Fixed number for test
+    const mobile = "+919542156208"; // Fixed number for test
 
     if (!otp) {
       return res.status(400).json({ success: false, message: "OTP is required" });
